@@ -27,12 +27,13 @@ and open the template in the editor.
             beschikbaar zijn.
         </p>
         <?php
-        $a = 100; $b = 25; $c = 25; $d = 25; $e = 25;
-        print "<p style=color:white;font-size:130%><b>Huidige situatie: (in totaal $a van de 200 parkeerplekken vrij)</b></p>";
-        print "<p><ul style=color:whitesmoke;font-size:110%;><li>Begaande grond: $b/50 parkeerplekken vrij</li>"
-            . "<li>Eerste etage: $c/50 parkeerplekken vrij</li>"
-            . "<li>Tweede etage: $d/50 parkeerplekken vrij</li>"
-            . "<li>Derde etage: $e/50 parkeerplekken vrij</li></ul></p>"
+        $a = 25; $b = 25; $c = 25; $d = 25;
+        $aa = $a+$b+$c+$d; 
+        print "<p style=color:white;font-size:130%><b>Huidige situatie: (in totaal $aa van de 200 parkeerplekken vrij)</b></p>";
+        print "<p><ul style=color:whitesmoke;font-size:110%;><li>Begaande grond: $a/50 parkeerplekken vrij</li>"
+            . "<li>Eerste etage: $b/50 parkeerplekken vrij</li>"
+            . "<li>Tweede etage: $c/50 parkeerplekken vrij</li>"
+            . "<li>Derde etage: $d/50 parkeerplekken vrij</li></ul></p>"
         ?>
         <script>
             function etage(nr) {
