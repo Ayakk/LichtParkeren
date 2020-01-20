@@ -28,11 +28,36 @@ and open the template in the editor.
         </p>
         <?php
         $a = 100; $b = 25; $c = 25; $d = 25; $e = 25;
-        print "<p style=color:whitesmoke;font-size:130%><b>Huidige situatie: (in totaal $a van de 200 parkeerplekken vrij)</b></p>";
-        print "<p><ul style=color:whitesmoke;font-size:110%;><li>Begaande grond: $b/50 parkeerplekken</li>"
-            . "<li>Eerste etage: $c/50 parkeerplekken</li>"
-            . "<li>Tweede etage: $d/50 parkeerplekken</li>"
-            . "<li>Derde etage: $e/50 parkeerplekken</li></ul></p>"
+        print "<p style=color:white;font-size:130%><b>Huidige situatie: (in totaal $a van de 200 parkeerplekken vrij)</b></p>";
+        print "<p><ul style=color:whitesmoke;font-size:110%;><li>Begaande grond: $b/50 parkeerplekken vrij</li>"
+            . "<li>Eerste etage: $c/50 parkeerplekken vrij</li>"
+            . "<li>Tweede etage: $d/50 parkeerplekken vrij</li>"
+            . "<li>Derde etage: $e/50 parkeerplekken vrij</li></ul></p>"
         ?>
+        <script>
+            function etage(nr) {
+                var pic;
+                if (nr == 0) {
+                    pic = "klikocijfer_0.jpg"
+                } if (nr == 1) {
+                    pic = "klikocijfer_1.jpg"
+                } if (nr == 2) {
+                    pic = "klikocijfer_2.jpg"
+                } if (nr == 3) {
+                    pic = "klikocijfer_3.jpg"
+                }
+                document.getElementById('myImage').src = pic;
+            }
+        </script>
+        <p style="color:white;font-size:130%;text-align:center;"><b>
+            Plattegrond Parkeergarage:
+        </b></p>
+        <img id="myImage" src="klikocijfer_0.jpg" width="100%" height="600">
+        <p style="text-align:center;">
+            <button type="button" onclick="etage(0)">BG</button>
+            <button type="button" onclick="etage(1)">E1</button>
+            <button type="button" onclick="etage(2)">E2</button>
+            <button type="button" onclick="etage(3)">E3</button>
+        </p>
     </body>
 </html>
