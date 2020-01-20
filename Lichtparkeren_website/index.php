@@ -49,7 +49,7 @@ and open the template in the editor.
                 document.getElementById('myImage').src = pic;
             }
         </script>
-        <p style="color:white;font-size:130%;text-align:center;"><b>
+        <p style="color:white;font-size:200%;text-align:center;"><b>
             Plattegrond Parkeergarage:
         </b></p>
         <img id="myImage" src="klikocijfer_0.jpg" width="100%" height="600">
