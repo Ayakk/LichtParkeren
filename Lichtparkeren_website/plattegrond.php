@@ -15,7 +15,19 @@
                 }
                 document.getElementById('myImage').src = pic;
             }
+            function openMainMenu(){
+            window.location.replace("http://localhost/Lichtparkeren_website/index.php")
+        }
+        function openLog_Page(){
+            window.location.replace("http://localhost/Lichtparkeren_website/log_page.php")
+        }
         </script>
+        <form>
+        <input type="button" value="Hoofdmenu" onclick="openMainMenu()">
+    </form>
+        <form>
+        <input type="button" value="Log Page" onclick="openLog_page()">
+    </form>
         <p style="color:white;font-size:200%;text-align:center;"><b>
                 Plattegrond Parkeergarage:
             </b></p>

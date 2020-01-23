@@ -7,6 +7,14 @@ and open the template in the editor.
 <!-- oefenen met website aanpassen
  int-waardes verbinden met garage -->
 <html>
+    <script>
+        function openPlattegrond(){
+            window.location.replace("http://localhost/Lichtparkeren_website/plattegrond.php")
+        }
+        function openLog_Page(){
+            window.location.replace("http://localhost/Lichtparkeren_website/Log_Page.php")
+        }
+        </script>
     <head>
         <meta charset="UTF-8">
         <title></title>
@@ -26,6 +34,11 @@ and open the template in the editor.
             deze plattegrond staat ook aangegeven welke plekken er nu wel en niet
             beschikbaar zijn.
         </p>
-
-        
+        <form>
+        <input type="button" value="Plattegrond" onclick="openPlattegrond()">
+    </form>
+        <form>
+        <input type="button" value="Log Page" onclick="openLog_Page()">
+    </form>
+    </body>
 </html>
