@@ -14,11 +14,17 @@ and open the template in the editor.
             function openMainMenu(){
             window.location.replace("http://localhost/Lichtparkeren_website/index.php")
         }
+        function dashboard(){
+            window.location.replace("http://localhost/Lichtparkeren_website/dashboard.php")
+        }
         </script>
     <body>
         <form>
         <input type="button" value="Hoofdmenu" onclick="openMainMenu()">
     </form>
+        <form>
+            <input type="button" value="Dashboard" onclick="dashboard()">
+        </form>
         <form>
         <input type="button" value="Plattegrond" onclick="openPlattegrond()">
         </form>
